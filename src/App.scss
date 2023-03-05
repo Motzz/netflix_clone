@@ -1,0 +1,317 @@
+$tulisan-putih: white;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+  background-color: rgb(44, 44, 44);
+
+  // objek tambahan sebelum gambar nambah gradient
+  .kartu-film1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 1) 100%);
+  }
+  .kartu-film1 img {
+    width: 100%;
+  }
+  .kartu-film1 {
+    position: relative;
+    object-fit: cover;
+    width: 100%;
+
+    .text-wrapper {
+      position: absolute;
+      width: 100%;
+      max-width: 674px;
+      bottom: 600px;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+
+    .text-h1 {
+      color: $tulisan-putih;
+      font-size: 3.125rem;
+    }
+    .text-h2 {
+      color: $tulisan-putih;
+      font-size: 1.625rem;
+    }
+    .text-h3 {
+      color: $tulisan-putih;
+    }
+    .email-wrapper {
+      display: flex;
+      justify-content: center;
+      height: 3rem;
+
+      .text {
+        padding: 10px 10px;
+        width: 100%;
+        color: grey;
+        font-weight: 500;
+      }
+      .button {
+        min-width: 84px;
+        background-color: red;
+        border: none;
+        font-weight: 600;
+        line-height: normal;
+        font-size: 1.1rem;
+        color: $tulisan-putih;
+      }
+    }
+  }
+
+  .kartu-film2 {
+    background: black;
+    color: white;
+    display: flex;
+
+    .text-film2 {
+      text-align: left;
+      margin: 80px 80px;
+    }
+  }
+  .kartu-film3 {
+    background: black;
+    color: white;
+    display: flex;
+    flex-direction: row-reverse;
+
+    .text-film3 {
+      text-align: left;
+      margin: 80px 80px;
+    }
+  }
+  .kartu-film4 {
+    background: black;
+    color: white;
+    display: flex;
+
+    .text-film4 {
+      text-align: left;
+      margin: 80px 80px;
+    }
+  }
+  .kartu-film5 {
+    background: black;
+    color: white;
+    display: flex;
+    flex-direction: row-reverse;
+
+    .text-film5 {
+      text-align: left;
+      margin: 80px 80px;
+    }
+  }
+  .kartu-film6 {
+    background: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    padding: 20px;
+
+    .text-film6 {
+      text-align: center;
+      margin: 80px 80px;
+    }
+    .kotak-text6 h1 {
+      margin: 30px 50px;
+    }
+    .kotak-text6 {
+      display: flex;
+      justify-content: space-between;
+      background-color: rgb(30, 30, 30);
+      margin-left: 40rem;
+      margin-right: 40rem;
+      .logo {
+        padding: 50px 50px;
+      }
+    }
+  }
+
+  .kartu-film7 {
+    background: black;
+    color: white;
+    display: flex;
+    flex-direction: row-reverse;
+
+    .text-film7 {
+      text-align: left;
+      margin: 80px 80px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    background-color: rgb(44, 44, 44);
+
+    // objek tambahan sebelum gambar nambah gradient
+    .kartu-film1::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+
+      height: 600px;
+
+      background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 1) 100%);
+    }
+    .kartu-film1 img {
+      width: 100vw;
+      object-fit: cover;
+
+      height: 600px;
+    }
+    .kartu-film1 {
+      position: relative;
+      object-fit: cover;
+      width: 100vw;
+
+      height: 600px;
+
+      .text-wrapper {
+        position: absolute;
+        width: 100%;
+        max-width: 474px;
+        bottom: 100px;
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
+
+      .text-h1 {
+        color: $tulisan-putih;
+        font-size: 2.125rem;
+      }
+      .text-h2 {
+        color: $tulisan-putih;
+        font-size: 1.625rem;
+      }
+      .text-h3 {
+        color: $tulisan-putih;
+      }
+      .email-wrapper {
+        display: flex;
+        justify-content: center;
+        height: 3rem;
+
+        .text {
+          padding: 10px 10px;
+          width: 100%;
+          color: grey;
+          font-weight: 500;
+        }
+        .button {
+          min-width: 84px;
+          background-color: red;
+          border: none;
+          font-weight: 600;
+          line-height: normal;
+          font-size: 1.1rem;
+          color: $tulisan-putih;
+        }
+      }
+    }
+
+    .kartu-film2 {
+      background: black;
+      color: white;
+      display: flex;
+
+      .text-film2 {
+        text-align: left;
+        margin: 80px 80px;
+      }
+    }
+    .kartu-film3 {
+      background: black;
+      color: white;
+      display: flex;
+      flex-direction: row-reverse;
+
+      .text-film3 {
+        text-align: left;
+        margin: 80px 80px;
+      }
+    }
+    .kartu-film4 {
+      background: black;
+      color: white;
+      display: flex;
+
+      .text-film4 {
+        text-align: left;
+        margin: 80px 80px;
+      }
+    }
+    .kartu-film5 {
+      background: black;
+      color: white;
+      display: flex;
+      flex-direction: row-reverse;
+
+      .text-film5 {
+        text-align: left;
+        margin: 80px 80px;
+      }
+    }
+    .kartu-film6 {
+      background: black;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      justify-content: center;
+      padding: 20px;
+
+      .text-film6 {
+        text-align: center;
+        margin: 80px 80px;
+      }
+      .kotak-text6 h1 {
+        margin: 30px 50px;
+      }
+      .kotak-text6 {
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(30, 30, 30);
+        margin-left: 40rem;
+        margin-right: 40rem;
+        .logo {
+          padding: 50px 50px;
+        }
+      }
+    }
+
+    .kartu-film7 {
+      background: black;
+      color: white;
+      display: flex;
+      flex-direction: row-reverse;
+
+      .text-film7 {
+        text-align: left;
+        margin: 80px 80px;
+      }
+    }
+  }
+}
