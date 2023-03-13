@@ -19,17 +19,21 @@ $tulisan-putih: white;
   }
   .kartu-film1 img {
     width: 100%;
+    height: 600px;
   }
   .kartu-film1 {
     position: relative;
     object-fit: cover;
     width: 100%;
-
+    height: 600px;
     .text-wrapper {
       position: absolute;
       width: 100%;
-      max-width: 674px;
-      bottom: 600px;
+      max-width: 774px;
+      padding-top: 100px;
+
+      top: 0;
+      bottom: 0;
       left: 0;
       right: 0;
       margin: auto;
@@ -114,28 +118,32 @@ $tulisan-putih: white;
   .kartu-film6 {
     background: black;
     color: white;
+    padding: 20px;
+    gap: 10px;
+
     display: flex;
     flex-direction: column;
-    gap: 10px;
     justify-content: center;
-    padding: 20px;
+
+    align-items: center;
 
     .text-film6 {
       text-align: center;
-      margin: 80px 80px;
     }
-    .kotak-text6 h1 {
-      margin: 30px 50px;
-    }
+
     .kotak-text6 {
       display: flex;
       justify-content: space-between;
       background-color: rgb(30, 30, 30);
-      margin-left: 40rem;
-      margin-right: 40rem;
       .logo {
-        padding: 50px 50px;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-right: 20px;
       }
+    }
+
+    .kotak-text6 h1 {
+      margin: 30px 50px;
     }
   }
 
@@ -151,8 +159,22 @@ $tulisan-putih: white;
     }
   }
 }
+// =========================================================================================kueri=======================================================================================================
+// =========================================================================================kueri=======================================================================================================
 
-@media only screen and (max-width: 768px) {
+// =========================================================================================kueri=======================================================================================================
+
+// =========================================================================================kueri=======================================================================================================
+
+// =========================================================================================kueri=======================================================================================================
+
+// =========================================================================================kueri=======================================================================================================
+
+// =========================================================================================kueri=======================================================================================================
+
+// =========================================================================================kueri=======================================================================================================
+
+@media only screen and (max-width: 998px) {
   .container {
     overflow-y: scroll;
     overflow-x: hidden;
@@ -171,7 +193,7 @@ $tulisan-putih: white;
       left: 0;
       width: 100vw;
 
-      height: 600px;
+      height: 650px;
 
       background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 1) 100%);
     }
@@ -179,19 +201,19 @@ $tulisan-putih: white;
       width: 100vw;
       object-fit: cover;
 
-      height: 600px;
+      height: 650px;
     }
     .kartu-film1 {
       position: relative;
       object-fit: cover;
       width: 100vw;
 
-      height: 600px;
+      height: 650px;
 
       .text-wrapper {
         position: absolute;
         width: 100%;
-        max-width: 474px;
+        max-width: 274px;
         bottom: 100px;
         left: 0;
         right: 0;
@@ -200,31 +222,36 @@ $tulisan-putih: white;
 
       .text-h1 {
         color: $tulisan-putih;
-        font-size: 2.125rem;
+        font-size: 2.1rem;
       }
       .text-h2 {
         color: $tulisan-putih;
-        font-size: 1.625rem;
+        font-size: 1.3rem;
       }
       .text-h3 {
         color: $tulisan-putih;
       }
       .email-wrapper {
+        padding-top: 20px;
         display: flex;
+        height: 2rem;
+        flex-direction: column;
         justify-content: center;
-        height: 3rem;
-
+        align-items: center;
         .text {
+          margin: 10px;
           padding: 10px 10px;
           width: 100%;
           color: grey;
           font-weight: 500;
         }
         .button {
-          min-width: 84px;
+          margin-top: 10px;
+          width: 50px;
+          padding: 10px;
           background-color: red;
           border: none;
-          font-weight: 600;
+          font-weight: 200;
           line-height: normal;
           font-size: 1.1rem;
           color: $tulisan-putih;
@@ -236,69 +263,59 @@ $tulisan-putih: white;
       background: black;
       color: white;
       display: flex;
-
+      flex-direction: column;
       .text-film2 {
-        text-align: left;
+        text-align: center;
         margin: 80px 80px;
+        font-size: 15px;
+      }
+      .gambar-text2 img {
+        width: 100%;
       }
     }
     .kartu-film3 {
       background: black;
       color: white;
       display: flex;
-      flex-direction: row-reverse;
+      flex-direction: column;
 
       .text-film3 {
-        text-align: left;
+        text-align: center;
         margin: 80px 80px;
+        font-size: 15px;
+      }
+      .gambar-text3 img {
+        width: 100%;
       }
     }
     .kartu-film4 {
       background: black;
       color: white;
       display: flex;
+      flex-direction: column;
 
       .text-film4 {
-        text-align: left;
+        text-align: center;
         margin: 80px 80px;
+        font-size: 15px;
+      }
+      .gambar-text4 img {
+        width: 100%;
       }
     }
     .kartu-film5 {
       background: black;
       color: white;
       display: flex;
-      flex-direction: row-reverse;
+      flex-direction: column;
 
       .text-film5 {
-        text-align: left;
-        margin: 80px 80px;
-      }
-    }
-    .kartu-film6 {
-      background: black;
-      color: white;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      justify-content: center;
-      padding: 20px;
-
-      .text-film6 {
         text-align: center;
         margin: 80px 80px;
+        font-size: 15px;
       }
-      .kotak-text6 h1 {
-        margin: 30px 50px;
-      }
-      .kotak-text6 {
-        display: flex;
-        justify-content: space-between;
-        background-color: rgb(30, 30, 30);
-        margin-left: 40rem;
-        margin-right: 40rem;
-        .logo {
-          padding: 50px 50px;
-        }
+      .gambar-text5 img {
+        width: 100%;
       }
     }
 

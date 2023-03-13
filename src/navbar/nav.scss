@@ -1,9 +1,9 @@
 .nav-container {
   display: flex;
   justify-content: space-between;
-  z-index: 10;
+  position: absolute;
 
-  position: fixed;
+  z-index: 1;
   left: 0;
   right: 0;
   padding-left: 40px;
@@ -19,9 +19,9 @@
 
     .logo-ind {
       padding: 5px 15px; /*atas bawah, kanan kiri*/
-      font-size: 1.1rem;
+      font-size: 0.9rem;
 
-      padding: 0.5rem 1.5rem;
+      padding: 0.1rem 1.5rem;
 
       font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
       background-color: rgba(0, 0, 0, 0.1);
@@ -34,10 +34,56 @@
       padding: 5px 20px;
       font-weight: 600;
       line-height: normal;
-      font-size: 1.1rem;
-      padding: 0.5rem 1.2rem;
+      font-size: 0.9rem;
+
+      padding: 0.1rem 1.2rem;
       background-color: red;
       color: white;
+    }
+  }
+}
+@media only screen and (max-width: 998px) {
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding-left: 40px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    .logo-netflix {
+      width: 70px;
+    }
+    .button-kanan {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      .logo-ind {
+        padding: 5px 15px; /*atas bawah, kanan kiri*/
+        font-size: 0.9rem;
+
+        padding: 0.1rem 1.5rem;
+
+        font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+        background-color: rgba(0, 0, 0, 0.1);
+        color: white;
+      }
+      .logo-masuk {
+        font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+        border-radius: 5px;
+        border: none;
+        padding: 5px 20px;
+        font-weight: 600;
+        line-height: normal;
+        font-size: 0.9rem;
+
+        padding: 0.1rem 1.2rem;
+        background-color: red;
+        color: white;
+      }
     }
   }
 }

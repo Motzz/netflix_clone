@@ -5,9 +5,9 @@ import Nav from "./navbar/Nav";
 function App() {
   return (
     <div>
-      <div className="container">
-        <Nav />
+      <Nav />
 
+      <div className="container">
         <div className="kartu-film1">
           <img src="https://assets.nflxext.com/ffe/siteui/vlv3/a43711df-c428-4f88-8bb3-b2ac5f20608f/d018d3cd-2602-44a4-a9e2-5b66e5fef473/ID-id-20230227-popsignuptwoweeks-perspective_alpha_website_small.jpg" />
           <div className="text-wrapper">
@@ -15,8 +15,8 @@ function App() {
             <h2 className="text-h2">Tonton dimana pun dan diperangkat apa pun, mulai dari Rp65.000/bulan.</h2>
             <p className="text-h3">Siap menonton? Masukkan email untuk membuat atau memulai lagi keanggotaanmu</p>
             <div className="email-wrapper">
-              <input type="text" value="Alamat email" className="text"></input>
-              <button className="button">Mulai > </button>
+              <input type="text" placeholder="Alamat email" className="text"></input>
+              <button className="button">Mulai {">"} </button>
             </div>
           </div>
         </div>
