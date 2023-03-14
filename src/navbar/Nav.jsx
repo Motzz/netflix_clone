@@ -15,7 +15,11 @@ const Nav = () => {
       </div>
 
       <div className="button-kanan">
-        <button className="logo-ind">Bahasa indonesia</button>
+        <select name="" id="" className="logo-ind">
+          <option value="bahasa">Bahasa indonesia</option>
+          <option value="inggris">English</option>
+        </select>
+        {/* <button className="logo-ind">Bahasa indonesia</button> */}
         <button className="logo-masuk">Masuk</button>
       </div>
     </nav>

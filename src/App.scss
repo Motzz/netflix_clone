@@ -82,6 +82,21 @@ $tulisan-putih: white;
       text-align: left;
       margin: 80px 80px;
     }
+    .gambar-text2 {
+      position: relative;
+      img {
+        z-index: 100;
+      }
+      .video {
+        video {
+          width: 450px;
+          height: 250px;
+        }
+        position: absolute;
+        bottom: 137px;
+        right: 96px;
+      }
+    }
   }
   .kartu-film3 {
     background: black;
@@ -124,6 +139,7 @@ $tulisan-putih: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 
     align-items: center;
 
@@ -132,18 +148,56 @@ $tulisan-putih: white;
     }
 
     .kotak-text6 {
+      width: 100%;
       display: flex;
       justify-content: space-between;
       background-color: rgb(30, 30, 30);
+
       .logo {
         margin-top: auto;
         margin-bottom: auto;
         margin-right: 20px;
       }
     }
+    .kotak-text6:hover {
+      background-color: rgb(54, 54, 54);
+    }
+    .deskripsi {
+      width: 100%;
+      background-color: rgb(30, 30, 30);
+      p {
+        text-align: left;
+        padding: 20px;
+      }
+    }
+    .text-h3 {
+      color: $tulisan-putih;
+    }
+    .email-wrapper {
+      display: flex;
+      justify-content: center;
+      height: 3rem;
 
+      .text {
+        padding: 10px 10px;
+        width: 100%;
+        color: grey;
+        font-weight: 500;
+      }
+      .button {
+        min-width: 84px;
+        background-color: red;
+        border: none;
+        font-weight: 600;
+        line-height: normal;
+        font-size: 1.1rem;
+        color: $tulisan-putih;
+      }
+    }
     .kotak-text6 h1 {
       margin: 30px 50px;
+      align-items: center;
+      text-align: center;
     }
   }
 
@@ -151,11 +205,36 @@ $tulisan-putih: white;
     background: black;
     color: white;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
 
-    .text-film7 {
+    .text-1 li {
       text-align: left;
-      margin: 80px 80px;
+      margin-bottom: 5px;
+      list-style-type: none;
+      color: grey;
+      a {
+        color: grey;
+      }
+    }
+    .text-2 li {
+      text-align: left;
+      margin-bottom: 5px;
+
+      list-style-type: none;
+      a {
+        color: grey;
+      }
+    }
+    .text-3 li {
+      text-align: left;
+      margin-bottom: 5px;
+
+      list-style-type: none;
+      a {
+        color: grey;
+      }
     }
   }
 }
@@ -281,8 +360,14 @@ $tulisan-putih: white;
 
       .text-film3 {
         text-align: center;
-        margin: 80px 80px;
+        margin: 80px 30px;
         font-size: 15px;
+        h1 {
+          font-size: 20px;
+        }
+        h2 {
+          font-size: 15px;
+        }
       }
       .gambar-text3 img {
         width: 100%;
@@ -296,8 +381,14 @@ $tulisan-putih: white;
 
       .text-film4 {
         text-align: center;
-        margin: 80px 80px;
+        margin: 80px 30px;
         font-size: 15px;
+        h1 {
+          font-size: 20px;
+        }
+        h2 {
+          font-size: 15px;
+        }
       }
       .gambar-text4 img {
         width: 100%;
@@ -311,23 +402,131 @@ $tulisan-putih: white;
 
       .text-film5 {
         text-align: center;
-        margin: 80px 80px;
+        margin: 80px 30px;
         font-size: 15px;
+        h1 {
+          font-size: 20px;
+        }
+        h2 {
+          font-size: 15px;
+        }
       }
       .gambar-text5 img {
         width: 100%;
       }
     }
+    .kartu-film6 {
+      background: black;
+      color: white;
+      padding: 60px 20px;
+      gap: 10px;
 
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      align-items: center;
+
+      .text-film6 {
+        text-align: center;
+      }
+
+      .kotak-text6 {
+        cursor: pointer;
+
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(30, 30, 30);
+
+        .logo {
+          margin-top: auto;
+          margin-bottom: auto;
+          margin-right: 20px;
+        }
+      }
+      .deskripsi {
+        width: 100%;
+        background-color: rgb(30, 30, 30);
+        p {
+          text-align: left;
+          padding: 20px;
+        }
+      }
+      .kotak-text6:hover {
+        background-color: rgb(54, 54, 54);
+      }
+      .kotak-text6 h1 {
+        margin: 30px 30px;
+        align-items: center;
+        text-align: center;
+        font-size: 20px;
+      }
+      .text-h3 {
+        color: $tulisan-putih;
+      }
+      .email-wrapper {
+        padding-top: 20px;
+        display: flex;
+        height: 2rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .text {
+          margin: 10px;
+          padding: 10px 10px;
+          width: 100%;
+          color: grey;
+          font-weight: 500;
+        }
+        .button {
+          margin-top: 10px;
+          width: 50px;
+          padding: 10px;
+          background-color: red;
+          border: none;
+          font-weight: 200;
+          line-height: normal;
+          font-size: 1.1rem;
+          color: $tulisan-putih;
+        }
+      }
+    }
     .kartu-film7 {
       background: black;
       color: white;
       display: flex;
-      flex-direction: row-reverse;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 20px;
 
-      .text-film7 {
+      .text-1 li {
         text-align: left;
-        margin: 80px 80px;
+        margin-bottom: 5px;
+        list-style-type: none;
+        color: grey;
+        a {
+          color: grey;
+        }
+      }
+      .text-2 li {
+        text-align: left;
+        margin-bottom: 5px;
+
+        list-style-type: none;
+        a {
+          color: grey;
+        }
+      }
+      .text-3 li {
+        text-align: left;
+        margin-bottom: 5px;
+
+        list-style-type: none;
+        a {
+          color: grey;
+        }
       }
     }
   }
